@@ -2,16 +2,37 @@
 
 <html lang="en">
   <head>
-    
     <title>CatPhotoApp</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A simple app to view and share cat photos and showing examples for section, main, footer, emphasis, strong, HTML elements and anchor's interaction styles and attributes." />
+    <meta property="og:title" content="catphotoapp.com" /> 
+    <meta property="og;type" content="website" />
+    <style>
+      a:link {
+        color: blue;
+      }
+      a:visited {
+        color: purple;
+      }
+      a:hover {
+        color: red;
+      }
+      a:focus {
+        color: green;
+      }
+      a:active {
+        color: black;
+      }
+    </style>
   </head>
   <body>
     <main>
       <h1>CatPhotoApp</h1>
       <section>
         <h2>Cat Photos</h2>
-        <p>Everyone loves <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg">cute cats</a> online!</p>
-        <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+        <p>Everyone loves <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" target="_blank">cute cats</a> online!</p>
+        <p>See more <a target="_self" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
         <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
       </section>
       <section>
@@ -24,6 +45,7 @@
         </ul>
         <figure>
           <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+          <!-- Here an example of emphasis element (<em>) -->
           <figcaption>Cats <em>love</em> lasagna.</figcaption>  
         </figure>
         <h3>Top 3 things cats hate:</h3>
@@ -34,6 +56,7 @@
         </ol>
         <figure>
           <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Two tabby kittens sleeping together on a couch.">
+          <!-- Here an example of strong element (<strong>) -->
           <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  
         </figure>
       </section>
