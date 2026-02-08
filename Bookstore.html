@@ -4,7 +4,7 @@
     <title>Bookstore
     </title>
     <meta charset="UTF-8">
-    <meta name="description" content="This is a very, very simple page to learn buttons, abbreviations, contact information, character references (HTML entities), description, and OG protocol">
+    <meta name="description" content="This is a very, very simple page to learn buttons, abbreviations, table element and its corresponding elements, contact information, character references (HTML entities), description, and OG protocol">
     <meta content="bookstore.com" property="og:title" />
     <meta property="og;type" content="website" />
     <meta content="https://copilot.microsoft.com/shares/tvLv8sfb11dRDuhMbC4uM" property="og:image"/>
@@ -14,6 +14,56 @@
   <!-- Here is an example of using abbreviations element -->
     <h1><abbr title="eXcel Yourself Zealously">XYZ</abbr> Bookstore</h1>
     <p>Browse our collection of amazing books!</p>
+    <section>
+      <table>
+        <caption>Book Catalog</caption>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>Publication Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><nav><a href="#sally-adventure-book">Sally's SciFi Adventure</a></nav></td>
+            <td>Sally Smith</td>
+            <td>SciFi</td>
+            <td>2020</td>
+          </tr>
+          <tr>
+            <td><nav><a href="#dave-cooking-book">Dave's Cooking Adventure</a></nav></td>
+            <td>Dave Johnson</td>
+            <td>Cooking</td>
+            <td>2019</td>
+          </tr>
+          <tr>
+            <td><nav><a href="#you-must-live-new-poetry-from-palestine">You Must Live: New Poetry from Palestine</a></nav></td>
+            <td>Tayseer Abu Odeh</td>
+            <td>E Poetry</td>
+            <td>2025</td>
+          </tr>
+          <tr>
+            <td><nav><a href="#ذكر-شرقي-منقرض">ذكر شرقي منقرض</a></nav></td>
+            <td>Dr. Mohammed Taha</td>
+            <td>Arabic Literature</td>
+            <td>2021</td>
+          </tr>
+          <tr>
+            <td><nav><a href="#عظماء-الدنيا-وعظماء-الآخرة">عظماء الدنيا وعظماء الآخرة</a></nav></td>
+            <td>Dr. Mostafa Mahmoud</td>
+            <td>Islamic Literature</td>
+            <td>2007</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4">Total Books: 5</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
     <div class="card-container">
       <div class="card" id="sally-adventure-book">
         <h2>Sally's SciFi Adventure</h2>
@@ -24,6 +74,21 @@
       <div class="card" id="dave-cooking-book">
         <h2>Dave's Cooking Adventure</h2>
         <p>This is the story of Dave as he learns to cook everything from pancakes to pasta, one recipe at a time.&#128214;</p>
+        <button class="btn">Buy Now</button>
+      </div>
+      <div class="card" id="you-must-live-new-poetry-from-palestine">
+        <h2>You Must Live: New Poetry from Palestine</h2>
+        <p>This is a collection of new poetry from Palestine.&#128214;</p>
+        <button class="btn">Buy Now</button>
+      </div>
+      <div class="card" id="ذكر-شرقي-منقرض">
+        <h2>ذكر شرقي منقرض</h2>
+        <p>This book is not about the "Eastern man" we heard about and knew in the past, but rather about the "Eastern masculinity" that has recently infiltrated our society and taken its place—a pale and distorted version. "Eastern masculinity"—in this form and with this behavior—is a very serious illness, not just an illness, but a complete syndrome. It begins with how fathers and mothers raise their sons and daughters and ends tragically, unjustly, for everyone involved. This book will attempt to approach, examine, analyze, and understand the symptoms, types, causes, and complications of "Eastern masculinity," and offer realistic perspectives on changing and treating this intractable syndrome.&#128214;</p>
+        <button class="btn">Buy Now</button>
+      </div>
+      <div class="card" id="عظماء-الدنيا-وعظماء-الآخرة">
+        <h2>عظماء الدنيا وعظماء الآخرة</h2>
+        <p>This book is a collection of the author's essays, so you may find some ideas repeated in more than one place. It begins and ends with mystical reflections—"I think the author likes and leans towards them"—starting with a poetic play and ending with "an hour of contemplation" and "moments of intoxication." In between, there are various essays of a religious and political nature, discussing the West and its ambitions, Israel, America, and our position as Arabs regarding our surroundings and our relationship with ourselves.&#128214;</p>
         <button class="btn">Buy Now</button>
       </div>
     </div>
