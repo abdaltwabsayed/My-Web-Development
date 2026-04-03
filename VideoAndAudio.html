@@ -4,26 +4,31 @@
     <title>HTML Audio and Video Lab</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="A webpage showcasing the use of HTML5 audio and video elements to play media related to Al-Aqsa Mosque. The page shows examples for video, audio, span elements and some aria attributes" />
+    <meta name="description" content="A webpage showcasing the use of HTML5 audio and video elements to play media related to Al-Aqsa Mosque. The page shows examples for video, audio, track, span elements and some aria attributes" />
     <meta property="og:title" content="videoandaudio.com" />
     <meta property="og;type" content="website" />
     </head>
     <body>
         <h1>Al-Aqsa</h1>
         <section>
-            <h2>Here is Alquds</h2>
+            <!-- Here is an example of tabindex attribute for better keyboard navigation -->
+            <h2 tabindex="1">Here is Alquds</h2>
+            <!-- Video element with controls and autoplay and track elements -->
             <video controls autoplay width="640">
                 <source src="هنا القدس (بدون إيقاع) - فريق طيور الجنة.mp4" type="video/mp4">
+                <track src="subtitles.vtt" kind="subtitles" srclang="ar" label="Arabic Subtitles" default>
             </video>
         </section>
         <section>
             <h2>For Al-Aqsa Mosque Supplication</h2>
+            <!-- Audio element with controls and loop attributes and track elements -->
             <audio controls loop>
                 <source src="لأجل المسجد الأقصى نصر الدين طوبار.mp3" type="audio/mp3">
+                <track src="لأجل المسجد الأقصى نصر الدين طوبار.vtt" kind="subtitles" srclang="ar" label="Arabic Subtitles" default>
             </audio>
             <h3>Audio Controls</h3>
-
-            <button type="button">Play</button>
+            <!-- Here is an example of accesskey attribute for better keyboard navigation -->
+            <button type="button" accesskey="p">Play</button>
 
             <div>
                 <!-- The aria-labelledby attribute references both the label and description for the volume control -->
@@ -32,7 +37,7 @@
             <input type="range" min="0" max="100" value="50"
                 aria-labelledby="volume-label volume-description">
             </div>
-            <button type="button">Mute</button>
+            <button type="button" accesskey="m">Mute</button>
         </section>
     </body>
 </html>
