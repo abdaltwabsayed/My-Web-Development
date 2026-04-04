@@ -100,7 +100,7 @@ These materials are provided for educational and learning purposes. Feel free to
 
 ## 👨‍💻 Author
 
-**Abdaltwab Sayed**
+**abdaltwabsayed**
 
 ---
 
