@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This page about a to-do list use CSS pseudo-classes with links like link, visited, hover, focus, and active." />
+    <meta property="og:title" content="todolist.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://suncatcherstudio.com/uploads/printables/to-do-list/pdf-png/printable-to-do-list-template-1-fefefe-010101.png"/>
+    <meta property="og:url" content="https://www.freecodecamp.org" />
+    <link href="styles/ToDoList.css" rel="stylesheet"/>
+    <title>Styled To-Do List</title>
+</head>
+
+<body>
+    <div id="container">
+        <h1>My To-Do List</h1>
+        <ul class="todo-list">
+            <li>
+                <input type="checkbox" id="game" />
+                <label for="game">Explore gaming keyboards</label>
+                <ul class="sub-item">
+                    <li>
+                        <a class="sub-item-link" href="https://chatgpt.com/" target="_blank">Store link</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <input type="checkbox" id="report" />
+                <label for="report">Finish the report</label>
+                <ul class="sub-item">
+                    <li>
+                        <a class="sub-item-link" href="https://chatgpt.com/" target="_blank">Request Access</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <input type="checkbox" id="warranty" />
+                <label for="warranty">View Phone's Warranty</label>
+                <ul class="sub-item">
+                    <li>
+                        <a class="sub-item-link" href="https://chatgpt.com/" target="_blank">View Receipts</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <input type="checkbox" id="processor" />
+                <label for="processor">Check Processor Specs</label>
+                <ul class="sub-item">
+                    <li>
+                        <a class="sub-item-link" href="https://chatgpt.com/" target="_blank">View Model Number</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
