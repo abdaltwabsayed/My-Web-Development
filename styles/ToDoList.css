@@ -1,5 +1,10 @@
 body {
-  background-color: #f0f0f0
+  background-image: url("https://c7.alamy.com/comp/M4WB3G/to-do-list-seamless-pattern-background-business-flat-vector-illustration-M4WB3G.jpg");
+  background-attachment: fixed; /*or scroll*/
+  background-size: contain; /*or cover*/
+  background-position: center; /*or top center*/
+  background-repeat: repeat; /*or repeat-x*/
+/* We can replace the above with one property: background: url("https://c7.alamy.com/comp/M4WB3G/to-do-list-seamless-pattern-background-business-flat-vector-illustration-M4WB3G.jpg") center/contain repeat fixed; */
 }
 
 #container {
@@ -7,6 +12,8 @@ body {
   max-width: 400px;
   padding: 20px;
   background-color: #fff;
+  /*Using the linearGradient transition */
+  background: linear-gradient(to right, green, lightgreen);
   border-radius: 10px;
   box-shadow: 0 0 10px;
 }
