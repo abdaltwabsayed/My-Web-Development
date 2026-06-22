@@ -12,9 +12,11 @@ body {
   max-width: 400px;
   padding: 20px;
   background-color: #fff;
-  /*Using the linearGradient transition */
-  background: linear-gradient(to right, green, lightgreen);
+  /*Using the linearGradient transition Taking contrast between the colors and background into consideration*/
+  background: linear-gradient(to right, rgb(253, 170, 42), white);
+  /*Using the radius of 10px the container corners*/
   border-radius: 10px;
+  border: 5px solid rgb(74, 74, 74);
   box-shadow: 0 0 10px;
 }
 
