@@ -1,4 +1,9 @@
-.plog-post-card {
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightgray;
+}
+
+.blog-post-card {
     margin: 0 auto;
     max-width: 400px;
     background-color: white;
@@ -10,13 +15,17 @@
 }
 
 .post-img {
-    width: max-content;
+    width: 100%;
     border-bottom: 5px solid white;
     overflow: hidden;
     position: relative;
 }
 
-.post-title .post-excerpt {
+.post-content {
+    padding: 20px;
+}
+
+.post-title, .post-excerpt {
     color: #333300;
     margin-top: 10px;
     margin-bottom: 10px;
