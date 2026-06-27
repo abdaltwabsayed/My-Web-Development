@@ -1,0 +1,32 @@
+body {
+    background-image: url("https://t4.ftcdn.net/jpg/00/72/92/83/360_F_72928371_WqqMwhEb3XPmeGlqH3ynIaoFss8uyV3K.webp");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#countLabel {
+    display: block;
+    text-align: center;
+    font-size: 10em;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+}
+
+#buttonContainer {
+    text-align: center;
+}
+
+.buttons {
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: white;
+    background-color: cadetblue;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+.buttons:hover {
+    background-color: darkcyan;
+}
