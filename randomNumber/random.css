@@ -1,0 +1,40 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: lightblue;
+}
+
+h2 {
+    color: gray;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#container {
+    background-color: aliceblue;
+    margin: 0 auto;
+    border-radius: 10px;
+    max-width: 400px;
+    box-shadow: 0 0 10px;
+}
+
+#rollButton {
+    font-size: 3em;
+    padding: 5px 25px;
+    border-radius: 10px;
+    margin-top: 5px;
+    background-color: burlywood;
+    cursor: pointer;
+}
+
+#rollButton:hover {
+    background-color: brown;
+    cursor: pointer;
+}
+
+.randomNumberLabel {
+    font-size: 3em;
+    background-color: aqua;
+    border-left: 5px solid darkblue;
+    margin: 5px;
+    display: block;
+}
