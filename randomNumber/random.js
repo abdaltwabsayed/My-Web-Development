@@ -15,7 +15,7 @@ let running = true;
 
 while(running){
     guess = Number(window.prompt(`Guess a number between ${max} and ${min}.`));
-    if(!guess || guess === NaN || guess < min || guess > max){
+    if(!guess || isNaN(guess) || guess < min || guess > max){
         continue;
     }
     running = false;
