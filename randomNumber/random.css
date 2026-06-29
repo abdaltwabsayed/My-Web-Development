@@ -4,6 +4,10 @@ body {
     background-color: lightblue;
 }
 
+h1 {
+    text-shadow: 2px 2px 5px gray;
+}
+
 h2 {
     color: gray;
     font-family: 'Courier New', Courier, monospace;
@@ -37,4 +41,13 @@ h2 {
     border-left: 5px solid darkblue;
     margin: 5px;
     display: block;
+}
+
+#result {
+    display: block;
+    font-size: 2em;
+    font-style: italic;
+    text-shadow: 2px 2px 5px gray;
+    margin-top: 50px;
+    border-left: 5px solid darkblue;
 }
