@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: skyblue;
+}
+
+h1 {
+    color: rgba(0, 0, 255, 0.777);
+    text-align: center;
+}
+
+form {
+    margin: auto;
+    max-width: 400px;
+    text-align: center;
+    background-color: rgb(255, 242, 0);
+    border-radius: 10px;
+    margin: auto;
+    padding: 25px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+#numberInput{
+    margin-bottom: 25px;
+    border-radius: 10px;
+    font-size: 1.5em; 
+    transform: scale(1.25);
+}
+
+#celsiusInput, #fahrenheitInput {
+    display: block;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+button {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    background-color: rgb(1, 209, 109);
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: lightgreen;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+p {
+    display: block;
+    background-color: aqua;
+    border-left: 10px solid blue;
+    font-weight: bold;
+}

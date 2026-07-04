@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple site to convert temperature degrees from Celsius to Fahrenheit and vice versa.">
+    <meta property="og:title" content="Temperature Conversion" />
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="https://www.youtube.com" />
+    <title>Temperature Conversion</title>
+    <link rel="stylesheet" href="temperatureCoversion.css" />
+</head>
+<body>
+    <form>
+        <h1>Temperature Conversion</h1>
+        <input type="number" id="numberInput" placeholder="Enter the temperature" />
+
+        <div id="celsiusInput">
+            <input type="radio" id="toFahrenheit" name="unit" />
+            <label for="toFahrenheit">Celsius ➡️ Fahrenheit</label>
+        </div>
+        
+        <div id="fahrenheitInput">
+            <input type="radio" id="toCelsius" name="unit" />
+            <label for="toCelsius">Fahrenheit ➡️ Celsius</label>
+        </div>
+        <button type="submit" onclick="convert()">Convert</button>
+
+        <p id="result"></p>
+    </form>
+    <script src="temperatureCoversion.js"></script>
+</body>
+</html>
