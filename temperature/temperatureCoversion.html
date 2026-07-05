@@ -6,13 +6,13 @@
     <meta name="description" content="A simple site to convert temperature degrees from Celsius to Fahrenheit and vice versa.">
     <meta property="og:title" content="Temperature Conversion" />
     <meta property="og:type" content="website">
-    <meta property="og:image" content="" />
+    <meta property="og:image" content="https://media.istockphoto.com/id/1323823418/photo/low-angle-view-thermometer-on-blue-sky-with-sun-shining.jpg?s=2048x2048&w=is&k=20&c=vs-wMhpIBhtgOfVrwVCGOIqto--JCLnYkunCXaq0F7c=" />
     <meta property="og:url" content="https://www.youtube.com" />
     <title>Temperature Conversion</title>
     <link rel="stylesheet" href="temperatureCoversion.css" />
 </head>
 <body>
-    <form>
+    <div id="form">
         <h1>Temperature Conversion</h1>
         <input type="number" id="numberInput" placeholder="Enter the temperature" />
 
@@ -28,7 +28,7 @@
         <button type="submit" onclick="convert()">Convert</button>
 
         <p id="result"></p>
-    </form>
+    </div>
     <script src="temperatureCoversion.js"></script>
 </body>
 </html>

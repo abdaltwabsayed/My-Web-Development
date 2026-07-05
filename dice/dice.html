@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="A simple site to roll number of dices randomly and show their results and images.">
+    <meta property="og:title" content="Dice Roller" />
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://as2.ftcdn.net/v2/jpg/05/67/72/31/1000_F_567723177_M2XduhmY4iv0efRj8afW1EqtRkNcsCsr.webp" />
+    <meta property="og:url" content="https://www.youtube.com" />
+    <link rel="stylesheet" href="dice.css">
+    <title>Dice Roller</title>
 </head>
 <body>
-$END$
+    <div id="container">
+        <h1>Dice Roller</h1>
+        <form onsubmit="rollDice(); return false;">
+            <label for="diceNumber">Number of dice: </label>
+            <input type="number" id="diceNumber" name="diceNumber" min="1" value="1">
+            <button type="submit">Roll Dice</button>
+        </form>
+        <div id="diceResult"></div>
+        <div id="diceImages"></div>
+    </div>
+
+    <script src="dice.js"></script>
 </body>
 </html>
