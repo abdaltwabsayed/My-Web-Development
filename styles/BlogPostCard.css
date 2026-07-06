@@ -1,3 +1,11 @@
+/* This is a CSS file for styling the blog post card page */
+
+:root::selection {
+  background-color: yellow;
+  color: black;
+}
+
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: lightgray;
@@ -12,6 +20,11 @@ body {
     padding: 20px;
     text-align: center;
     box-shadow: 0 0 10px;
+}
+
+.blog-post-card:hover {
+  transform: scale(1.1);
+  margin-top: 5vh;
 }
 
 .post-img {

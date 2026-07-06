@@ -1,3 +1,10 @@
+/* This is a CSS file for styling the ComperCafe page */
+
+:root::selection {
+  background-color: yellow;
+  color: black;
+}
+
 body {
   background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
   font-family: sans-serif;

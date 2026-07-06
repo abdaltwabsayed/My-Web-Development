@@ -1,3 +1,10 @@
+/* This is a CSS file for styling the business card page */
+
+:root::selection {
+  background-color: yellow;
+  color: black;
+}
+
 body {
     background: rosybrown;
     background-image: url("https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg") !important;
@@ -13,6 +20,10 @@ body {
     margin-right: auto;
     text-align: center;
     font-size: 16px;
+}
+
+.business-card:hover {
+  transform: scale(1.1);
 }
 
 .profile-image {
