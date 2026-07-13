@@ -1,3 +1,6 @@
+/* Tip on tight, colors take flight;
+   Shade and gleam from day to night. */
+
 h1 {
   text-align: center;
 }
@@ -43,3 +46,46 @@ h1 {
   background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
   box-shadow: 0 0 20px 0 hsla(223, 59%, 31%, 0.8);
 }
+
+.color-grid {
+  background-color: #F0F0F0;
+  padding: 10px 0;
+  margin: 10px auto;
+  border: 1px solid #CCC;
+  box-shadow: 0 0 20px 0 hsla(0, 0%, 0%, 0.8);
+  border-radius: 10px;
+}
+
+.color-box {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  padding: 10px;
+  margin: 10px 10px;
+}
+
+.color1 {
+  background-color: #FF0000;
+  box-shadow: 0 0 20px 0 hsla(0, 100%, 31%, 0.8);
+}
+
+.color2 {
+  background-color: rgb(255, 255, 0);
+  box-shadow: 0 0 20px 0 hsla(60, 100%, 31%, 0.8);
+}
+
+.color3 {
+  background-color: green;
+  box-shadow: 0 0 20px 0 hsla(120, 100%, 25%, 0.8);
+}
+
+.color4 {
+  background-color: hsl(240, 100%, 30%);
+  box-shadow: 0 0 20px 0 hsla(240, 100%, 30%, 0.8);
+}
+
+.color5 {
+  background-color: purple;
+  box-shadow: 0 0 20px 0 hsla(270, 100%, 25%, 0.8);
+}
+

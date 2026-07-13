@@ -11,7 +11,7 @@ body {
   background-size: contain; /*or cover*/
   background-position: center; /*or top center*/
   background-repeat: repeat; /*or repeat-x*/
-/* We can replace the above with one property: background: url("https://c7.alamy.com/comp/M4WB3G/to-do-list-seamless-pattern-background-business-flat-vector-illustration-M4WB3G.jpg") center/contain repeat fixed; */
+/* We can replace the above with one property: background: url("photo_url") center/contain repeat fixed; */
 }
 
 #container {
