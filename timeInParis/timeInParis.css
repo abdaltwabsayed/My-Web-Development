@@ -11,7 +11,7 @@ h1 {
     font-family: cursive, sans-serif;
     font-size: 4rem;
     text-align: center;
-    margin-top: calc(50vh - 2rem);
+    margin-top: calc(10vh - 70px);
     color: #ffffff;
     backdrop-filter: blur(5px);
 }
@@ -20,7 +20,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 55vh;
 }
 
 #time {
