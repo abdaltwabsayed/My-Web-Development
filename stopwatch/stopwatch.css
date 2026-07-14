@@ -1,0 +1,81 @@
+/* Tick-tock, time will rock, let your stopwatch shine and clock! */
+
+body {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://pngimg.com/uploads/stopwatch/stopwatch_PNG118.png");
+    background-size: contain;
+    background-position: top left;
+    background-repeat: repeat;
+}
+
+h1 {
+    display: block;
+    font-size: 4rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: hsl(0, 0%, 10%);
+    backdrop-filter: blur(15px);
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsla(0, 0%, 100%, 0.25);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border: 1px solid hsl(0, 0%, 20%);
+    border-radius: 50px;
+    box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+#display {
+    font-family: monospace;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 10%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
+}
+
+#controls button {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+#startStopwatch {
+    background-color: hsl(120, 100%, 25%);
+}
+
+#startStopwatch:hover {
+    background-color: hsl(120, 100%, 12%);
+    transform: scale(1.05);
+}
+
+#stopStopwatch {
+    background-color: hsl(10, 90%, 40%);
+}
+
+#stopStopwatch:hover {
+    background-color: hsl(10, 90%, 30%);
+    transform: scale(1.05);
+}
+
+#resetStopwatch {
+    background-color: hsl(205, 90%, 40%);
+}
+
+#resetStopwatch:hover {
+    background-color: hsl(205, 90%, 30%);
+    transform: scale(1.05);
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A stopwatch is a timepiece designed to measure the amount of time elapsed from a particular time when activated to when the piece is deactivated.">
+    <meta property="og:title" content="Stopwatch" />
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://pngimg.com/uploads/stopwatch/stopwatch_PNG118.png" />
+    <meta property="og:url" content="https://www.freecodecamp.org" />
+    <link href="stopwatch.css" rel="stylesheet">
+    <title>Stopwatch</title>
+</head>
+<body>
+    <h1>Stopwatch</h1>
+    <div id="container">
+        <div id="display">
+            00:00:00:00
+        </div>
+        <div id="controls">
+            <button id="startStopwatch" onclick="start()">Start</button>
+            <button id="stopStopwatch" onclick="stop()">Stop</button>
+            <button id="resetStopwatch" onclick="reset()">Reset</button>
+        </div>
+    </div>
+    <script src="stopwatch.js"></script>
+</body>
+</html>
