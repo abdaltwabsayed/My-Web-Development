@@ -1,0 +1,66 @@
+/* This is a lovely style page for features*/
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+    background-color: hsl(0, 0%, 40%);
+}
+
+h1 {
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.feature-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.feature-card {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    border: 1px solid hsl(0, 0%, 30%);
+    border-radius: 10px;
+    padding: 50px;
+    cursor: pointer;
+}
+
+.feature-card:hover {
+    outline: none;
+    border-color: hsl(240, 70%, 60%);;
+    box-shadow: 0 0 5px hsl(240, 70%, 60%);;
+    transform: scale(1.05);
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: 2px solid hsl(0, 0%, 40%);
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+    color: black;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+input[type="checkbox"]:checked {
+    background-color: hsl(240, 70%, 75%);
+    border: 2px solid hsl(240, 70%, 60%);
+}
+
+input[type="checkbox"]:checked::after {
+    content: "✓";
+    display: block;
+    width: 100%;
+    text-align: center;
+}
