@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Game of Rock Paper Scissors using classList in JS.">
+    <meta property="og:title" content="Rock Paper Scissors Game" />
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Rock-paper-scissors.svg/960px-Rock-paper-scissors.svg.png" />
+    <meta property="og:url" content="https://www.freecodecamp.org" />
+    <link href="rockPaperScissors.css" rel="stylesheet">
+    <title>Rock Paper Scissors Game</title>
+</head>
+<body>
+    <h1>Rock-Paper-Scissors</h1>
+    <div class="choices">   
+        <button onclick="playGame('rock')">👊</button>
+        <button onclick="playGame('paper')">✋</button>
+        <button onclick="playGame('scissors')">✌️</button>
+    </div> 
+
+    <div id="playerDisplay">Player: </div>
+    <div id="computerDisplay">Computer: </div>
+    <div id="resultDisplay"></div>
+
+    <div class="scoreDisplay">Player Score: 
+        <span id="playerScore">0</span>
+    </div>
+
+    <div class="scoreDisplay">Computer Score: 
+        <span id="computerScore">0</span>
+    </div>
+
+    <script src="rockPaperScissors.js"></script>
+</body>
+</html>
