@@ -1,0 +1,40 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: url("https://as1.ftcdn.net/v2/jpg/18/97/60/02/1000_F_1897600233_jlRPMJ3CmGACKZ8osSfuGDuMsoahWkC0.jpg") center fixed;
+    margin: 0 calc(100% - 600px);
+}
+
+#email {
+    padding: 50px;
+    margin: 50px;
+    width: 500px;
+    border: 2px solid aqua;
+    box-sizing: border-box;
+    background-color: hsl(56, 60%, 70%);
+    filter: sepia(70%);
+    border-radius: 40px 10px;
+}
+
+#confidential, #top-secret {
+    display: inline-block;
+    padding: 20px;
+    margin-left: 150px;
+    border: 5px solid red;
+}
+
+#confidential {
+
+    transform: rotate(-30deg);
+}
+
+#top-secret {
+    transform: rotate(30deg);
+}
+
+.blurred {
+    filter: blur(3px);
+}
+
+.blurred:hover {
+    filter: blur(0);
+}
