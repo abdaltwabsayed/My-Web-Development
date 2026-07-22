@@ -13,3 +13,7 @@ console.log("Sum:", sum);
 function isEven(element) {
     return element % 2 === 0;
 }
+fetch("https://pokeapi.co/api/v2/pokemon/pikachu")
+.then(response => response.json())
+.then(data => console.log(data))
+.catch(error => console.error(error));
