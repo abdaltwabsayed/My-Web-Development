@@ -1,0 +1,90 @@
+
+
+h1 {
+    text-align: center;
+}
+
+.pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+.pricing-card p {
+    font-size: 1.52rem;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.pricing-card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex: 0 0 200px;
+    align-items: center;
+    border: 2px solid black;
+    transition: all ease 0.3s;
+}
+
+.pricing-card:hover {
+    transform: scale(1.05);
+}
+
+.basic-plan {
+    order: 0;
+}
+
+.basic-plan li::marker {
+    content: "✗  ";
+    color: red;
+}
+
+.basic-plan li:first-of-type::marker, .basic-plan li:nth-of-type(2)::marker {
+    content: "✓  ";
+    color: green;
+
+}
+
+.pro-plan {
+    order: 1;
+    flex-grow: 2;
+    background-color: #f0f8ff;
+}
+
+.pro-plan li::marker {
+    content: "✓  ";
+    color: green;
+}
+
+.pro-plan li:last-of-type::marker {
+    content: "✗  ";
+    color: red;
+}
+
+.premium-plan {
+    order: 2;
+}
+
+.premium-plan li::marker {
+    content: "✓  ";
+    color: green;
+
+}
+
+a {
+    text-decoration: none;
+    width: 80%;
+    margin: 20px;
+    cursor: pointer;
+    text-align: center;
+    color: #000;
+    background-color: #f1be32;
+    border: 3px solid #eebe3a;
+    padding: 5px;
+}
