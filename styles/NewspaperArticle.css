@@ -18,7 +18,8 @@
     margin-top: 0;
 }
 
-.name, .author {
+.name,
+.author {
     text-transform: uppercase;
 }
 

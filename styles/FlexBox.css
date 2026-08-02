@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+#home {
+    color: #01A84D;
+}
+
+.registeration {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#sign-up {
+    color: white;
+    background-color: #01A84D;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+#sign-up a {
+    color: white;
+    font-size: 16px;
+}
+
+#register a {
+    color: #01A84D;
+    text-decoration: underline;
+}
