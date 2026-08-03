@@ -1,5 +1,11 @@
 /* This is a CSS file for styling the birthday greeting card page */
 
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
 :root::selection {
   background-color: yellow;
   color: black;
