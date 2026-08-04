@@ -1,0 +1,148 @@
+/* Navigation Bar Styles so divine,
+Making layouts look fine with every line */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-container {
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+}
+
+header ul  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+header li {
+    list-style: none;
+}
+
+#home {
+    color: #01A84D;
+}
+
+.registeration {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#sign-up {
+    color: white;
+    background-color: #01A84D;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+#sign-up a {
+    color: white;
+    font-size: 16px;
+}
+
+#register a {
+    color: #01A84D;
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+}
+
+.pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+.pricing-card p {
+    font-size: 1.52rem;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.pricing-card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex: 0 0 200px;
+    align-items: center;
+    border: 2px solid black;
+    transition: all ease 0.3s;
+}
+
+.pricing-card:hover {
+    transform: scale(1.05);
+}
+
+.basic-plan {
+    order: 0;
+}
+
+.basic-plan li::marker {
+    content: "✗  ";
+    color: red;
+}
+
+.basic-plan li:first-of-type::marker, .basic-plan li:nth-of-type(2)::marker {
+    content: "✓  ";
+    color: green;
+
+}
+
+.pro-plan {
+    order: 1;
+    flex-grow: 2;
+    background-color: #f0f8ff;
+}
+
+.pro-plan li::marker {
+    content: "✓  ";
+    color: green;
+}
+
+.pro-plan li:last-of-type::marker {
+    content: "✗  ";
+    color: red;
+}
+
+.premium-plan {
+    order: 2;
+}
+
+.premium-plan li::marker {
+    content: "✓  ";
+    color: green;
+
+}
+
+main a {
+    text-decoration: none;
+    width: 80%;
+    margin: 20px;
+    cursor: pointer;
+    text-align: center;
+    color: #000;
+    background-color: #f1be32;
+    border: 3px solid #eebe3a;
+    padding: 5px;
+}

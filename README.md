@@ -1,107 +1,162 @@
 
 # My Web Development Portfolio
 
-A comprehensive collection of HTML web development projects demonstrating semantic markup, accessibility best practices, and modern web standards.
+A growing collection of HTML, CSS, and JavaScript mini-projects covering layout design, accessibility, semantic markup, form building, and interactive front-end logic.
 
-## 📋 Project Overview
+## Overview
 
-This repository contains 10 diverse web development projects, each focusing on different HTML5 elements, semantic structure, accessibility features, and web design patterns.
+This repository contains a broad set of practice projects and UI experiments that were built as part of a front-end web development learning journey. It includes static landing pages, responsive design challenges, accessibility work, and small JavaScript-based apps and games.
 
-### Projects
+The collection now spans:
 
-| Project | Description | Featured Elements |
-|---------|-------------|------------------|
-| **CatPhotoApp.html** | An interactive cat photo app with navigation and galleries | Links, images, sections, anchor interaction states |
-| **VideoAndAudio.html** | Multimedia showcase for Al-Aqsa Mosque content | `<video>`, `<audio>`, `<track>`, accessibility attributes |
-| **HotelRating.html** | Professional hotel feedback form | Forms, fieldsets, legends, input types, `aria-labelledby` |
-| **Quotations.html** | Developer career tips with code examples | Blockquotes, `<pre>`, `<code>`, citations, ruby text |
-| **Accessibility.html** | Blog post about web accessibility | Semantic HTML, navigation, screen reader support |
-| **Koshary.html** | Egyptian cuisine recipe page with SVG icons | Lists, images, SVG, content organization |
-| **Bookstore.html** | E-commerce catalog with product cards | Tables, abbreviations, semantic structure, entities |
-| **SalahAddin.html** | Historical biography blog | Navigation, `<figure>`, `<figcaption>`, internal anchors |
-| **TheThreeHolyMosques.html** | Educational resource on Islamic sites | Embedded media, semantic sections, structured content |
-| **TravelAgencyPage.html** | Travel agency with destination guides | Responsive images, `<figure>`, linked content |
+- Semantic HTML pages and blog-style layouts
+- Accessibility-focused exercises and forms
+- Card, flyer, newsletter, and marketing mockups
+- JavaScript mini-apps such as counters, calculators, dice rollers, and games
+- CSS design practice for layout, typography, and visual composition
 
-## 🎯 Learning Outcomes
+## Project Categories
 
-These projects demonstrate proficiency in:
+### Layout and Content Pages
+- `Accessibility.html`
+- `Bookstore.html`
+- `BusinessCard.html`
+- `ComperCafe.html`
+- `CssSelectorPractice.html`
+- `DrNormanTributePage.html`
+- `EvenFlyer.html`
+- `HomeContosoConf.html`
+- `HotelRating.html`
+- `Koshary.html`
+- `MarkerPens.html`
+- `NavigationBar.html`
+- `NewspaperArticle.html`
+- `NutritionFactsLabel.html`
+- `ParentTeacherConferenceForm.html`
+- `PricingPlansLayoutPage.html`
+- `Quotations.html`
+- `RathkoPainting.html`
+- `SalahAddin.html`
+- `SelectionFeaturePage.html`
+- `TaqwaEmailPage.html`
+- `TheThreeHolyMosques.html`
+- `ToDoList.html`
+- `TravelAgencyPage.html`
+- `VideoAndAudio.html`
 
-- **Semantic HTML5** - Using appropriate elements for content structure (`<nav>`, `<main>`, `<article>`, `<section>`)
-- **Accessibility** - ARIA attributes, semantic markup, keyboard navigation, screen reader support
-- **Forms & Input** - Various input types, validation, labels, fieldsets, error handling
-- **Media Integration** - Video, audio, subtitles, responsive images
-- **Meta Tags & SEO** - Open Graph protocol, descriptions, viewport configuration
-- **CSS Styling** - Link states, layouts, responsive design foundations
-- **User Experience** - Navigation patterns, form design, content organization
+### Forms, UI, and Accessibility Practice
+- `about-us.html`
+- `AccessibilityQuiz.html`
+- `BirthDay.html`
+- `BlogPostCard.html`
+- `CatPhotoApp.html`
+- `CatMockingDrawing.html`
+- `CatsGalleryFlexBox.html`
+- `HouseMockingDrawing.html`
+- `JobApplicationForm.html`
+- `RegisterationForm.html`
+- `PlayingCards.html`
+- `TheThreeHolyMosques.html`
 
-## 🚀 Getting Started
+### JavaScript Mini Apps and Games
+- `calculator/`
+- `counter/`
+- `dice/`
+- `javascriptTest/`
+- `pokemon/`
+- `randomNumber/`
+- `rockPaperScissors/`
+- `stopwatch/`
+- `temperature/`
+- `timeInParis/`
+
+## Highlights
+
+This portfolio emphasizes:
+
+- Semantic HTML structure using meaningful elements such as `header`, `main`, `section`, `article`, `nav`, and `figure`
+- Accessible forms and UI patterns with labels, legends, and ARIA-oriented elements
+- Responsive and visually polished CSS layouts
+- Media handling with audio, video, captions, and embedded content
+- JavaScript interactivity for practical front-end functionality
+- Clean practice-style project organization for learning and experimentation
+
+## Repository Structure
+
+```text
+My-Web-Development/
+├── README.md
+├── *.html                          # Static HTML/CSS practice pages
+├── assets/                         # Shared media files and subtitles
+├── calculator/                     # Calculator app
+├── counter/                        # Counter app
+├── dice/                           # Dice roller
+├── javascriptTest/                 # JavaScript practice page
+├── pokemon/                        # Pokémon-inspired page/app
+├── randomNumber/                   # Random number generator
+├── rockPaperScissors/              # Rock-paper-scissors game
+├── stopwatch/                      # Timer/stopwatch app
+├── styles/                         # CSS files for multiple pages
+├── temperature/                    # Temperature converter
+├── timeInParis/                    # Time display app
+└── .git/                           # Git metadata
+```
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- Semantic markup and accessibility principles
+- SVG and embedded media
+- Responsive design patterns
+
+## Getting Started
 
 ### Prerequisites
-- Modern web browser (Chrome, Firefox, Safari, Edge)
-- Text editor or IDE for viewing/editing HTML
+- A modern browser such as Chrome, Edge, Firefox, or Safari
+- A code editor like VS Code for viewing and editing files
 
-### Running the Projects
+### Run the projects
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/abdaltwabsayed/My-Web-Development.git
-   cd My-Web-Development
-   ```
 
-2. Open any HTML file directly in your browser:
-   - Right-click the file → "Open with" → Select your browser
-   - Or drag the file into your browser window
-
-3. No build process or dependencies required - all projects run locally
-
-## 📁 Repository Structure
-
-```
-My-Web-Development/
-├── README.md                           # This file
-├── *.html                              # Project files (10 projects)
-└── assets/                             # Media resources
-    ├── subtitles.vtt                   # Video subtitles
-    └── لأجل المسجد الأقصى...vtt        # Audio subtitles (Arabic)
+```bash
+git clone https://github.com/abdaltwabsayed/My-Web-Development.git
+cd My-Web-Development
 ```
 
-## 🛠 Technologies Used
+2. Open any HTML file directly in the browser.
 
-- **HTML5** - Semantic markup, forms, multimedia
-- **CSS3** - Styling, layout, interactive states
-- **Meta Tags** - SEO, Open Graph protocol
-- **ARIA Attributes** - Accessibility enhancements
-- **SVG** - Scalable vector graphics
+3. For folder-based projects, open the project folder and launch the `index.html` or page-specific HTML file in a browser.
 
-## ✨ Key Features
+> No build tools or package installation are required. These are static front-end projects.
 
-- ✅ **W3C Compliant** - Valid HTML5 markup
-- ♿ **Accessible** - ARIA support, semantic structure, keyboard navigation
-- 📱 **Responsive** - Mobile-friendly viewport configuration
-- 🌍 **Multilingual** - English and Arabic content
-- 🔍 **SEO Optimized** - Meta descriptions, proper heading hierarchy
+## Learning Focus
 
-## 💡 Use Cases
+This repository demonstrates practical understanding of:
 
-- Learning resource for HTML fundamentals and best practices
-- Reference examples for semantic markup patterns
-- Inspiration for web design and UX concepts
-- Portfolio demonstration of web development skills
+- HTML structure and semantics
+- CSS layout and styling techniques
+- Accessible and user-friendly interfaces
+- Form design and validation patterns
+- DOM manipulation and JavaScript interaction
+- Small, self-contained web application development
 
-## 📝 Notes
+## Notes
 
-- All projects are self-contained and can run independently
-- No external dependencies or build tools required
-- Media files included in the `assets/` directory
+- Projects are designed to be simple, self-contained, and easy to run locally.
+- The repo is intentionally focused on learning and experimentation rather than production application architecture.
+- Many files are standalone examples that can be opened and explored independently.
 
-## 📄 License
+## License
 
-These materials are provided for educational and learning purposes. Feel free to use, modify, and distribute as needed for your learning journey.
+This project is provided for educational and learning purposes. Feel free to use, modify, and share it for personal study and practice.
 
-## 👨‍💻 Author
+## Author
 
 **abdaltwabsayed**
 
 ---
 
-*Last updated: April 2026*
+*Last updated: August 2026*
