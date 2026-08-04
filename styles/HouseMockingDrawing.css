@@ -1,0 +1,283 @@
+/* House Mocking Drawing Styles 
+A sketch so bright, a home in sight. 
+*/
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #87CEEB 0%, #bfe9ff 55%, #dff7ff 100%);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 0%, rgba(255,255,255,0.2) 100%);
+  pointer-events: none;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 220px;
+  order: -2;
+  background: linear-gradient(to bottom, #6fbf4d 0%, #4a8f2f 100%);
+  clip-path: ellipse(80% 100% at 50% 100%);
+  pointer-events: none;
+}
+
+.cloud {
+  position: fixed;
+  width: 120px;
+  height: 40px;
+  background: white;
+  border-radius: 999px;
+  opacity: 0.8;
+  filter: blur(0.5px);
+  pointer-events: none;
+}
+
+.cloud::before,
+.cloud::after {
+  content: "";
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+}
+
+.cloud::before {
+  width: 45px;
+  height: 45px;
+  left: 15px;
+  top: -15px;
+}
+
+.cloud::after {
+  width: 55px;
+  height: 55px;
+  right: 15px;
+  top: -20px;
+}
+
+.cloud-1 {
+  top: 90px;
+  left: 80px;
+}
+
+.cloud-2 {
+  top: 120px;
+  right: 40px;
+  transform: scale(1.2);
+}
+
+.cloud-3 {
+  top: 60px;
+  left: 25%;
+  transform: scale(0.9);
+  opacity: 0.65;
+}
+
+.cloud-4 {
+  top: 60px;
+  left: 65%;
+  transform: scale(0.9);
+  opacity: 0.65;
+}
+
+#house {
+  position: relative;
+  top: 200px;
+  width: 500px;
+  height: 400px;
+  background-color: #8B4513;
+  border: 2px solid #000;
+  margin: 50px auto 250px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+#house div {
+  position: absolute;
+}
+
+#chimney {
+  top: -150px;
+  left: 350px;
+  width: 70px;
+  height: 100px;
+  z-index: -1;
+  background-color: #A52A2A;
+  clip-path: polygon(0% 100%, 100% 100%, 75% 0%, 25% 0%);
+}
+
+#roof {
+  top: -150px;
+  left: -25px;
+  width: 550px;
+  height: 150px;
+  background-color: #D2691E;
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+#window-1 {
+  top: 100px;
+  left: 50px;
+  width: 80px;
+  height: 80px;
+  background-color: #87CEEB;
+  border: 2px solid #000;
+}
+
+#window-1-frame-1 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background-color: #000;
+}
+
+#window-1-frame-2 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+}
+
+#window-2 {
+  top: 100px;
+  left: 370px;
+  width: 80px;
+  height: 80px;
+  background-color: #87CEEB;
+  border: 2px solid #000;
+}
+
+#window-2-frame-1 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background-color: #000;
+}
+
+#window-2-frame-2 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+}
+
+#door {
+  top: 230px;
+  left: 210px;
+  width: 80px;
+  height: 150px;
+  background-color: #654321;
+  border: 2px solid #000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.18);
+}
+
+#door-knob {
+  position: absolute;
+  top: 70px;
+  left: 10px;
+  width: 10px;
+  height: 10px;
+  background-color: #FFD700;
+  border-radius: 50%;
+}
+
+#stairs {
+  position: absolute;
+  bottom: -120px;
+  left: 0;
+  width: 500px;
+  height: 220px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.step {
+  position: absolute;
+  height: 42px;
+  bottom: 0;
+  transform-style: preserve-3d;
+}
+
+.step-top {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(145deg, #c27a47 0%, #7d4928 100%);
+  border: 2px solid #5a2f17;
+  border-bottom-width: 3px;
+  box-sizing: border-box;
+  box-shadow: inset 2px 2px 0 rgba(255, 255, 255, 0.28),
+              inset -2px -2px 0 rgba(0, 0, 0, 0.35),
+              0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.step-top::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.22) 0%, transparent 35%, rgba(0, 0, 0, 0.08) 100%);
+  pointer-events: none;
+}
+
+.step::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 10px;
+  background: rgba(0, 0, 0, 0.28);
+  filter: blur(6px);
+  transform: skewX(-20deg);
+}
+
+.step:nth-child(1) {
+  left: 95px;
+  width: 310px;
+  bottom: 0;
+}
+
+.step:nth-child(2) {
+  left: 125px;
+  bottom: 42px;
+  width: 250px;
+}
+
+.step:nth-child(3) {
+  left: 155px;
+  bottom: 84px;
+  width: 190px;
+}
+
+.step:nth-child(4) {
+  left: 185px;
+  bottom: 126px;
+  width: 130px;
+}
+
+
+.step:nth-child(2) .step-top {
+  background: linear-gradient(145deg, #a66e45 0%, #6b3d24 100%);
+}
+
+.step:nth-child(3) .step-top {
+  background: linear-gradient(145deg, #8a4f2a 0%, #523018 100%);
+}
+
+.step:nth-child(4) .step-top {
+  background: linear-gradient(145deg, #6c3a20 0%, #3d200f 100%);
+}
