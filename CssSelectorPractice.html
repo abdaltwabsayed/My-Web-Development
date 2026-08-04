@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Practice CSS selectors with examples and explanations. Learn how to use different types of selectors effectively in your web development projects." />
+    <meta property="og:title" content="CSS Selector Practice" />
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStLmLKNuPsYD2EDFS0S2GxqiHWvrBjw0KxO_KvsW3ENAqhE8sQfTKuLWQ&s=10" />
+    <meta property="og:url" content="https://www.w3schools.com/css/css_selectors.asp" />
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link href="styles/CssSelectorPractice.css" rel="stylesheet">
+    <title>CSS Selector Practice</title>
+</head>
+<body>
+    <header>
+        <h1>CSS Selectors Practice</h1>
+        <p>Master different CSS selectors and their applications.</p>
+        <ul id="nav-links">
+            <li><a id="home" href="CssSelectorPractice.html">Home</a></li>
+            <li><a id="about" href="about-us.html">About</a></li>
+            <li><a id="contact" href="#contact">Contact</a></li>
+            <li><a id="external-link" href="https://www.w3schools.com/css/css_selectors.asp">External Link</a></li>
+        </ul>
+    </header>
+    <main>
+        <section>
+            <h2>Understanding CSS Selectors</h2>
+            <p>
+                CSS selectors are <span class="blue-text">patterns</span> used to select the elements you want to style. There are <span class="purple-text">many types of</span> selectors available in CSS.
+            </p>
+            <p>
+                <span class="blue-text">Descendant selectors</span> select elements that are descendants of a specified element, while <span class="purple-text">child selectors</span> only select direct children.
+            </p>
+        </section>
+        <section>
+            <h2>Types of CSS Selectors</h2>
+            <p id="direct-children">This paragraph is a direct child of a section and has specific styling.</p>
+            <p id="info"><span class="types-text">Info</span>: Attribute selectors target elements based on their attributes.</p>
+            <p id="warning"><span class="types-text">Warning</span>: Be specific with your selectors to avoid unintended styling.</p>
+            <p id="success"><span class="types-text">Success</span>: You have successfully learned advanced CSS selectors!</p>
+            <ol id="selector-types">
+                <li><span class="types-text">Universal Selector</span>: Selects all elements (<strong>e.g.</strong><code>, *</code>).</li>
+                <li><span class="types-text">Type Selector</span>: Selects elements by their tag name (<strong>e.g.</strong><code>, p, div</code>).</li>
+                <li><span class="types-text">Class Selector</span>: Selects elements by their class attribute (<strong>e.g.</strong><code>, .class-name</code>).</li>
+                <li><span class="types-text">ID Selector</span>: Selects a single element by its ID (<strong>e.g.</strong><code>, #id-name</code>).</li>
+                <li><span class="types-text">Attribute Selector</span>: Selects elements based on an attribute or attribute value (<strong>e.g.</strong><code>, [attribute], [attribute=value]</code>).</li>
+            </ol>
+        </section>
+        <section>
+            <div id="nested-content">
+                <h3>Nested Content</h3>
+                <p>This p within div which is a direct child of the section which is a child of the main element.</p>
+                <p><span>Highlighted</span> text within a paragraph using child selector.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h2>Contact Form</h2>
+        <form action="CssSelectorPractice.html" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Submit</button>
+        </form>
+    </footer>
+</body>
+</html>
