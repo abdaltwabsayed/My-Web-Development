@@ -12,11 +12,12 @@
     <title>Pokemon</title>
 </head>
 <body>
-    
-    <input type="text" id="pokemonName" placeholder="Enter Pokemon name">
-    <button onclick="fetchData()">Fetch Pokemon</button><br>
-
-    <img src="" alt="Pokemon Sprite" id="pokemonSprite" style="display: none;">
+    <form onsubmit="event.preventDefault(); fetchData();">
+        <input type="text" id="pokemonName" placeholder="Enter Pokemon name" autofocus autocomplete="on" required>
+        <button onclick="fetchData()">Fetch Pokemon</button><br>
+    </form>
+    <p id="pokemonInfo"><span>If you don't know the name, try one of these:</span> [Pikachu, Bulbasaur, Charmander, Squirtle, Charizard, Eevee, Mewtwo, Gengar, Snorlax, Dragonite, Chikorita, Cyndaquil, Totodile, Togepi, Ampharos, Scizor, Tyranitar, Lugia, Ho-Oh, Celebi, Treecko, Torchic, Mudkip, Gardevoir, Aggron, Salamence, Metagross, Kyogre, Groudon, Rayquaza, Lucario, Garchomp, Arceus, Zoroark, Greninja, Mimikyu, Dragapult, Tinkaton]</p>
+    <img src="" alt="Pokemon Sprite" id="pokemonSprite">
 
     <script src="pokemon.js"></script>
 </body>
