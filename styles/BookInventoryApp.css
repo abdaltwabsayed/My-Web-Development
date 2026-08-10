@@ -41,13 +41,13 @@ tr[class="in-progress"] span[class="status"] {
     box-shadow: 0 0 5px;
 }
 
-span[class=rate], span[class="status"] {
+span[class="rate"], span[class="status"] {
     width: 100px;
     height: 25px;
     padding: 10px;
 } 
 
-span[class~=rate] > span {
+span[class~="rate"] > span {
     width: auto;
     height: auto;
     padding: 10px;
@@ -57,24 +57,24 @@ span[class~=rate] > span {
     background-color: transparent;
 } 
 
-span[class~=one] {
+span[class~="one"] {
     background-image: linear-gradient(to bottom, transparent);
 } 
 
-span[class~=two] {
+span[class~="two"] {
     background-image: linear-gradient(to bottom, transparent);
 } 
 
-span[class~=three] {
+span[class~="three"] {
     background-image: linear-gradient(to bottom, transparent);
 } 
 
-span[class~=one] > span:first-of-type,
-span[class~=two] > span:first-of-type,
-span[class~=two] > span:nth-of-type(2),
-span[class~=three] > span
+span[class~="one"] > span:first-of-type,
+span[class~="two"] > span:first-of-type,
+span[class~="two"] > span:nth-of-type(2),
+span[class~="three"] > span
 {
-    background-color: yellow;
+    background-image: linear-gradient(45deg, yellow, gold);
 }
 
 thead tr {
