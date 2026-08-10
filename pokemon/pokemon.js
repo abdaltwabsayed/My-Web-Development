@@ -14,6 +14,12 @@ async function fetchData(){
 
         imgElement.src = pokemonSprite;
         imgElement.style.display = "block";
+        imgElement.alt = pokemonName;
+        imgElement.focus();
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: "smooth"
+        });
     }
     catch(error){
         console.error(error);
