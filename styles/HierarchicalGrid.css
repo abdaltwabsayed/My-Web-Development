@@ -1,0 +1,156 @@
+:root {
+    --primary_color: rgb(255, 230, 238);
+}
+
+body {
+    display: grid;
+    background-color: rgb(235, 99, 131);
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 2fr;
+    grid-template-areas: "header"
+                         "header"
+                         "main"
+                         "main"
+                         "footer";
+    gap: 10px;
+}
+
+div:not(.reg-container) {
+    background-color: var(--primary_color);
+}
+
+h1 {
+    text-align: center;
+}
+
+header {
+    display: grid;
+    grid-area: header;
+    grid-template-areas:
+                        "nav"
+                        "h1";
+}
+nav {
+    grid-area: nav;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+h1{
+    grid-area: h1;
+}
+
+label {
+    align-self: center;
+    position: relative;
+    background-color: whitesmoke;
+    text-align: center;
+    line-height: 0.5;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ aside {
+    display: flex;
+}
+
+nav img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-left: 15%;
+}
+
+.reg-container {
+    align-self: center;
+}
+
+.reg-container a {
+    text-decoration: none;
+    width: 60px;
+    height: 30px;
+    background-color: var(--primary_color);
+    color: #000;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "main1 main1 main2"
+        "main1 main1 main3";
+    gap: 10px;
+}
+
+main div:first-of-type {
+    grid-area: main1;
+}
+
+main div:nth-of-type(2) {
+    grid-area: main2;
+}
+
+
+main div:nth-of-type(3) {
+    grid-area: main3;
+}
+
+aside {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    height: calc(100vh - 160px);
+    top: 80px;
+}
+
+aside ul {
+    width: 100%;
+    align-self: flex-start;
+    padding: 0;
+    margin: 0 auto;
+}
+
+aside ul li {
+    list-style: none;
+    background-color: var(--primary_color);
+    padding: 10px;
+    margin: 0 0 20px 0;
+}
+
+aside ul li a {
+    text-decoration: none;
+    margin: 0;
+}
+
+footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+        "footer1 footer1 footer2 footer2 footer3 footer4";
+    gap: 10px;
+}
+
+footer div:first-of-type {
+    grid-area: footer1;
+}
+
+footer div:nth-of-type(2) {
+    grid-area: footer2;
+}
+
+footer div:nth-of-type(3) {
+    grid-area: footer3;
+}
+
+footer div:nth-of-type(4) {
+    grid-area: footer4;
+}
