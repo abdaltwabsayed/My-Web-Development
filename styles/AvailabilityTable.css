@@ -1,0 +1,95 @@
+/* Rows align and columns shine, colors meet in a pattern fine. */
+
+:root {
+    --color0: hsl(0, 0%, 100%);
+    --color1: hsl(120, 95%, 90%);
+    --color2: hsl(120, 95%, 80%);
+    --color3: hsl(120, 95%, 65%);
+    --color4: hsl(120, 95%, 40%);
+    --color5: hsl(120, 95%, 25%);
+    --solid-border: 2px solid black;
+    --dashed-border: 2px dashed black;
+    --height: 20px; 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--height);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+caption {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    padding: var(--height);
+}
+
+td {
+    height: var(--height);
+    width: 100px;
+    border-right: var(--solid-border);
+}
+
+.time, .days {
+    border: var(--solid-border);
+}
+
+.available-0 {
+    background-color: var(--color0);
+}
+
+.available-1 {
+    background-color: var(--color1);
+}
+
+.available-2 {
+    background-color: var(--color2);
+}
+
+.available-3 {
+    background-color: var(--color3);
+}
+
+.available-4 {
+    background-color: var(--color4);
+}
+
+.available-5 {
+    background-color: var(--color5);
+}
+
+.sharp {
+    border-bottom: var(--solid-border);
+}
+
+.half {
+    border-bottom: var(--dashed-border);
+}
+
+#legend {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 7px;
+}
+
+div:has(#legend-gradient) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#legend-gradient {
+    width: 120px;
+    height: var(--height);
+    border: var(--solid-border);
+    background: linear-gradient(90deg, var(--color0) 0% 17%, var(--color1) 17% 34%, var(--color2) 34% 50%, var(--color3) 50% 67%, var(--color4) 67% 83%, var(--color5) 83% 100%);
+}
