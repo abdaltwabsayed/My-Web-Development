@@ -1,0 +1,58 @@
+
+
+.newspaper-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto repeat(3, auto);
+    grid-template-areas: "title title title"
+                         "feature-article feature-article cover-image"
+                         "secondary-article secondary-article cover-image"
+                         "small-article1 small-article2 small-article3";
+    gap: 20px;
+}
+
+.title {
+    grid-area: title;
+    background-image: linear-gradient(to right, black, red);
+    color: aliceblue;
+    font-family: serif;
+}
+
+.title h1 {
+    text-align: center;
+}
+
+.feature-article {
+    grid-area: feature-article;
+}
+
+.secondary-article {
+    grid-area: secondary-article;
+}
+
+.cover-image {
+    grid-area: cover-image ;
+}
+
+img {
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.small-article1 {
+    grid-area: small-article1;
+}
+
+.small-article2 {
+    grid-area: small-article2;
+}
+
+.small-article3 {
+    grid-area: small-article3;
+}
+
+.cover-image, .feature-article, .secondary-article, .small-article1, .small-article2, .small-article3 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
