@@ -32,6 +32,11 @@
 
 .cover-image {
     grid-area: cover-image ;
+    background-color: #a0a0a0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 img {
