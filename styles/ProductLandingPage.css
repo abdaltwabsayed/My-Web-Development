@@ -1,0 +1,179 @@
+:root {
+    --primary-blue: #152c4e; /* The deep blue from logo */
+    --dark-gray: #2e2e31;    /* The gray text color */
+    --text-light: #666;      /* Lighter gray for paragraph text */
+    --bg-light: #fff;        /* Page and card background */
+    --gap: 20px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif; /* A simple, clean font */
+    background-color: #f7f7f7;     /* A very light gray body background */
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    max-height: 12vh;
+    top: 0;
+    background-color: var(--bg-light);
+}
+
+#header-img {
+    max-width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+#nav-bar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: var(--gap);
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--text-light);
+}
+
+#subtitle {
+    text-align: center;
+    color: var(--dark-gray);
+    font-size: 1.8rem;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[id="email"] {
+    padding: 5px;
+    margin-bottom: 5%;
+    width: 60%;
+}
+
+input[id="email"]:focus, input[id="email"]:active {
+    border: 3px solid var(--primary-blue);
+}
+
+button[type="submit"] {
+    background-color: var(--primary-blue);
+    text-transform: uppercase;
+    font-size: large;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 30%;
+    transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: hsl(217, 71%, 28%);
+}
+
+button[type="submit"]:active {
+    background-color: hsl(217, 71%, 48%);
+}
+
+#features {
+    margin: var(--gap);
+    margin-top: 8%;
+    font-size: large;
+}
+
+.feature {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+}
+
+i {
+    font-size: 3.5rem;       /* Large icon size */
+    color: var(--primary-blue); /* The key color part! */
+    margin-bottom: 25px;
+}
+
+.feature h2 {
+    color: var(--dark-gray);
+}
+
+#video {
+    width: 100%;
+}
+
+#pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+.price-plan {
+    max-width: 60vw;
+    background-color: var(--bg-light);
+    padding: 0;
+    padding-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.type {
+    text-transform: uppercase;
+    font-size: larger;
+    background-color: #ddd;
+    padding: 15px 0;
+    width: 100%;
+    font-weight: 700;
+}
+
+.price-plan p {
+    padding-inline: 20px;
+}
+
+footer {
+    margin-top: 30px;
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: var(--gap);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--dark-gray);
+}
+
+footer span {
+    color: #666;
+}
+
+@media screen and (min-width: 1024px) {
+    #pricing {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--gap);
+    }
+
+    .price-plan {
+        max-width: 30vw;
+    }
+}

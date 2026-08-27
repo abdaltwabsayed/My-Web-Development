@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Complete, modern, and completely responsive Chair Product Landing Page custom-tailored to the specifications of the popular FreeCodeCamp responsive web design project. ">
+    <meta property="og:title" content="Product Landing Page" />
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://cdn.dribbble.com/userupload/13567835/file/original-7675191e13e93d7be6925b2c6d6ecfc2.png?resize=1502x1109&vertical=center" />
+    <meta property="og:url" content="https://www.freecodecamp.org" />
+    <title>Product Landing Page</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+BR+Guides&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="styles/ProductLandingPage.css" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <!--https://as1.ftcdn.net/v2/jpg/19/84/48/88/1000_F_1984488887_EY3tO2xTITakxotQiyVeykgkEVjrfNFh.jpg -->
+        <img id="header-img" title="logo" src="assets/Chair-logo.jpeg" alt="Shield logo with chair protection symbol">
+        <h1>The Chair Affair</h1>
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="#features">Features
+
+                    </a></li>
+                <li><a class="nav-link" href="#how-it-works">How
+                        It Works</a></li>
+                <li><a class="nav-link" href="#pricing">Pricing</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 id="subtitle">Where style meets flair for your favorite chair</h2>
+        <section id="form-container">
+            <form id="form" action="https://www.freecodecamp.org/email-submit" method="post">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address.." />
+                <button type="submit">Get Started</button>
+            </form>
+        </section>
+        <section id="features">
+            <div class="feature">
+                <i class="fa-solid fa-tags"></i>
+                <div>
+                    <h2>Premium Materials</h2>
+                    <p>Every chair in our collection begins with the finest raw materials. From sustainably harvested
+                        solid oak to spill-resistant performance velvet, we refuse to compromise on what goes into your
+                        seating. Experience the perfect blend of natural warmth, modern durability, and luxurious
+                        texture.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <i class="fa-solid fa-truck-fast"></i>
+                <div>
+                    <h2>Fast Shipping</h2>
+                    <p>Upgrading your space shouldn't require months of waiting. We have streamlined our fulfillment
+                        process to ensure your new furniture arrives safely and swiftly. Enjoy fast, reliable delivery
+                        directly to your doorstep, complete with real-time tracking every step of the way.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <i class="fa-solid fa-award"></i>
+                <div>
+                    <h2>Quality Assurance</h2>
+                    <p>We believe a great chair is a true investment. That is why every piece we offer undergoes
+                        rigorous, multi-point quality control testing before it ever leaves the warehouse. Sit with
+                        absolute confidence, knowing your purchase is backed by our strict standards for everyday wear
+                        and tear.</p>
+                </div>
+            </div>
+        </section>
+        <section id="how-it-works">
+            <iframe id="video" height="367" src="https://www.youtube.com/embed/tmbIVJgsmPk"
+                title="What Makes Your Office Chair Rise? The Gas Spring Explained!" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <section id="pricing">
+            <div class="price-plan">
+                <div class="type">The Everyday Essential</div>
+                <h2>$199</h2>
+                <p>
+                    <strong>The Value:</strong> At this price point, you are investing in accessible comfort and smart,
+                    lightweight design.
+                </p>
+                <p>
+                    <strong>Why it deserves the price:</strong> These chairs deliver essential ergonomic support without
+                    the premium markup. They typically feature durable polymer frames, breathable mesh backrests for
+                    airflow, and basic height adjustability. The true value lies in reliable, everyday
+                    function—providing a massive upgrade over a standard dining chair for a fraction of the cost of a
+                    high-end office setup.
+                </p>
+                <button type="submit" id="essential">Select</button>
+            </div>
+            <div class="price-plan">
+                <div class="type">The Premium Performer</div>
+                <h2>$529</h2>
+                <p>
+                    <strong>The Value:</strong> You are paying for engineered comfort, superior longevity, and advanced
+                    adjustability.
+                </p>
+                <p>
+                    <strong>Why it deserves the price:</strong> Chairs in this tier utilize higher-grade materials, such
+                    as cold-molded polyurethane foam cushions and advanced 3D mesh fabrics. The cost is justified by
+                    robust die-cast aluminum bases and advanced ergonomic mechanisms—like 3D adjustable armrests, seat
+                    tilt adjustments, and built-in adjustable lumbar support—which actively protect your posture and
+                    health over long periods of sitting.
+                </p>
+                <button type="submit" id="performer">Select</button>
+            </div>
+            <div class="price-plan">
+                <div class="type">The Signature Statement</div>
+                <h2>$1,399</h2>
+                <p>
+                    <strong>The Value:</strong> A chair at this level is a piece of functional art, offering heirloom
+                    quality and an uncompromising seating experience.
+                </p>
+                <p>
+                    <strong>Why it deserves the price:</strong> The elevated price tag is driven by exclusive, premium
+                    materials such as top-grain artisan leathers, high-end performance boucle, or solid hardwood frames.
+                    Beyond the stunning aesthetics, luxury chairs often feature proprietary seating mechanics,
+                    hand-stitched detailing, and the highest weight capacities. You are investing in a statement piece
+                    designed to last a lifetime while providing the ultimate, tailored comfort.
+                </p>
+                <button type="submit" id="signature">Select</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <span>&copy; Copyright 2026, Original Chairs</span>
+    </footer>
+</body>
+
+</html>
