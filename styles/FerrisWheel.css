@@ -1,0 +1,171 @@
+/* Spin with a grin, let the fun begin. */
+
+body {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/ParadisePier2010.JPG/1280px-ParadisePier2010.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wheel {
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-left: 50px;
+    position: absolute;
+    height: 55vw;
+    width: 55vw;
+    max-width: 500px;
+    max-height: 500px;
+    animation-name: wheel;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.line {
+    background-color: black;
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0% 0%;
+}
+
+.line:nth-of-type(2) {
+    transform: rotate(60deg);
+}
+
+.line:nth-of-type(3) {
+    transform: rotate(120deg);
+}
+
+.line:nth-of-type(4) {
+    transform: rotate(180deg);
+}
+
+.line:nth-of-type(5) {
+    transform: rotate(240deg);
+}
+
+.line:nth-of-type(6) {
+    transform: rotate(300deg);
+}
+
+.cabin {
+    background-color: gray;
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    border: 2px solid;
+    font-size: medium;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 10px;
+    transform-origin: 50% 0%;
+    animation: cabins 10s ease-in-out infinite;
+}
+
+.cabin:nth-of-type(1) {
+    right: -8.5%;
+    top: 50%;
+}
+
+.cabin:nth-of-type(2) {
+    right: 17%;
+    top: 93.5%;
+}
+
+.cabin:nth-of-type(3) {
+    right: 67%;
+    top: 93.5%;
+}
+
+.cabin:nth-of-type(4) {
+    left: -8.5%;
+    top: 50%;
+}
+
+.cabin:nth-of-type(5) {
+    left: 17%;
+    top: 7%;
+}
+
+.cabin:nth-of-type(6) {
+    right: 17%;
+    top: 7%;
+}
+
+i {
+    font-size: 3.5em;
+    vertical-align: middle;
+    animation-name: icons;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-play-state: running;
+}
+
+@keyframes wheel {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes cabins {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        background-color: #ff0000;
+    }
+
+    50% {
+        transform: rotate(-180deg);
+        background-color: #2d2dff;
+    }
+
+    75% {
+        background-color: #00ff00;
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes icons {
+    0% {
+        color: white;
+    }
+
+    25% {
+        color: #8b0000;
+    }
+
+    50% {
+        color: #191970;
+    }
+
+    75% {
+        color: #006400;
+    }
+
+    100% {
+        color: white;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        animation-play-state: paused;
+        scroll-behavior: auto !important;
+    }
+}
