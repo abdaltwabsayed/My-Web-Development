@@ -411,6 +411,11 @@ img {
     animation-delay: 0.15s;
 }
 
+#learning.section-visible .learning-card:nth-child(3) {
+    animation: learningRise 0.8s ease forwards;
+    animation-delay: 0.3s;
+}
+
 /* ---------- Technical Skills ---------- */
 
 #skills {
@@ -1017,6 +1022,38 @@ footer {
 
     .languages-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+/* Compact, single-row navbar + safe hero spacing on small/mid screens.
+   The default nav-link size/padding and 100px logo only work on wide
+   viewports; below 768px they wrap across two or three lines, and because
+   #navbar is position:fixed, that taller navbar was covering the hero
+   photo. This keeps the nav on one line and reserves clear space below it. */
+@media (max-width: 768px) {
+    #navbar {
+        flex-wrap: nowrap;
+    }
+
+    #navbar ul {
+        flex-wrap: nowrap;
+        margin-right: 0.75rem;
+    }
+
+    .nav-link {
+        font-size: 1.05rem;
+        padding: 14px 10px;
+    }
+
+    .logo {
+        height: 52px;
+        margin-left: 6px;
+    }
+
+    #welcome-section {
+        height: auto;
+        min-height: 100vh;
+        padding: 100px 1.5rem 3rem;
     }
 }
 
